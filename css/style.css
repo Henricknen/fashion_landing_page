@@ -18,7 +18,7 @@ body {
 .container {
     width: 100%;
     margin: auto;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 0 20px;
 }
 
@@ -37,7 +37,8 @@ body {
 header .container {
     display: flex;
     align-items: center;
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 45px
     gap: 50px;
 
 }
@@ -78,4 +79,28 @@ header nav .button {
 header nav .button:hover {
     color: #999;
     border-color:#999;
+}
+
+header .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    gap: 15px;
+    align-items: center;
+}
+
+header .menu.active {
+    display: flex;
+}
+
+@media (max-width: 820px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: flex;
+    }
 }
