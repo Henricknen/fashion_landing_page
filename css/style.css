@@ -37,18 +37,45 @@ body {
 header .container {
     display: flex;
     align-items: center;
-    padding: 0 45px;
+    padding: 45px 0;
     gap: 50px;
 
 }
 
 header nav {
-    flex: 1;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-header nav .lado_direito {
+header nav .lado_esquerdo {
     display: flex;
-    flex: 1;
+    gap: 20px;
+}
+
+header nav li {
+    margin: 0 30px;
+}
+
+header nav li a {
+    color:#FFF;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    color:#999;
+}
+
+header nav .button {
+    display: block;
+    border: 1px solid #FFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color:#FFF;
+}
+
+header nav .button:hover {
+    color: #999;
+    border-color:#999;
 }
